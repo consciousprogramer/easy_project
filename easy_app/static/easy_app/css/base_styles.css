@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+/* -------------------------  NAVBAR CSS STYLES----------------------------------------------*/
+nav{
+  width: 100%;
+  padding: 0 1rem;
+}
+.navbar{
+  transition: all;
+  transition-duration: 0.4s;
+  width: 100%;
+  background: rgb(50,50,205);
+  background: linear-gradient(90deg, rgba(50,50,205,1) 0%, rgba(0,212,255,1) 100%);
+  padding: 0 1rem;
+}
+.navbar-brand>img{
+  margin: 0 1rem 0 2rem;
+  width: 150px;
+  transition: all;
+  transition-duration: 0.5s;
+}
+.nav-item{
+  margin: 0 5px;
+  color:black;
+}
+
+/* -------------------------  NAVBAR CSS STYLES ENDS----------------------------------------------*/
+
+
+/*-------------------------------------------------School_name_AND_LOGO_MODULE---------------------------------------------------------*/
+.school_name_and_Logo_module{
+  margin-top: 39px;
+  padding: 1rem 2rem;
+  height: auto;
+  background: rgb(255,255,255);
+}
+
+.school_logo{
+
+}
+.school_logo_img{
+  width: 150px;
+}
+
+.eye_catachers_containers{
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+}
+
+.div_eye_catch_1,.div_eye_catch_2,.div_eye_catch_3{
+  padding: 0.5rem 1rem;
+  margin: 1rem 2rem;
+  border:2px solid black;
+  background: rgb(122,0,215);
+  background: linear-gradient(90deg, rgba(122,0,215,1) 28%, rgba(211,0,22,1) 100%);
+}
+.eye_catch_link{
+  margin:1rem 0;
+  color: black;
+  text-decoration: none;
+}
+/*-------------------------------------------------Scj=hool_name_AND_LOGO_MODULE---------------------------------------------------------*/

@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block meta %}
+    {% endblock %}
+
+    {% block title %}
+    {% endblock %}
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--
+    font-family: 'Montserrat';
+    font-family: 'Ubuntu';
+    font-family: 'Roboto';
+    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Slab';
+
+    -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href={% static "easy_app/css/base_styles.css" %}>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    {% block css %}
+    {% endblock %}
+
+  </head>
+  <body>
+
+    <!--  -->
+    <!--________________________ nanbar start ___________________________________-->
+
+    <div class="navbar_module">
+
+      <!-- NAVBAR ------------------------------------------------->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Student Zone
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown_1">
+                <a class="dropdown-item" href="">Login</a>
+                <a class="dropdown-item" href="">Get Homework</a>
+                <a class="dropdown-item" href="">Timetable</a>
+                <a class="dropdown-item" href="">Exam Results</a>
+                <a class="dropdown-item" href="">Teachers Messages</a>
+                <a class="dropdown-item" href="">Join Live Class</a>
+                <a class="dropdown-item" href="">Your Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">somthing else for later</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teachers Zone
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown_2">
+                <a class="dropdown-item btn" href="#">Login</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Start Live class</a>
+                <a class="dropdown-item" href="#">Add Notice alert</a>
+                <a class="dropdown-item" href="#">Take Attendance</a>
+                <a class="dropdown-item" href="#">Report Complaint</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="">Somthing Else for Later</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown_3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Parent Zone
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown_3">
+                <a class="dropdown-item btn" href="#">Login</a>
+                <a class="dropdown-item btn" href="#">Pay Fees</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">See ward's exam performance</a>
+                <a class="dropdown-item" href="#">Send Message to class teacher</a>
+                <a class="dropdown-item" href="#">see Attendance</a>
+                <a class="dropdown-item" href="#">see Complaint</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="">Somthing Else for Later</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tooltip" title="Click, To Bring Your Hair Back!" data-placement="bottom" href="" style="color:black;">Uniform</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="">Advice for Gaurdians</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Contact Us</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" style="color:black;" href="">Cost <span style="font-family:sans-serif;color:red;font-size: 0.7em;background-color:;padding: 0 0;border-radius:3px;">New</span></a>
+            </li>
+          -->
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+
+    <!--________________________ nanbar Ends ___________________________________-->
+
+
+      <!-- ________________________________________________School_name_logo_Bar_moduole_______________________________________________________-->
+      <div class="school_name_and_Logo_module container-fluid">
+
+        <div class="school_logo mr-auto">
+          <a href="#"><img class = "school_logo_img" src={% static "easy_app/images/clion_logo.png" %} alt=""></a>
+        </div>
+
+        <div class="eye_catachers_containers ml-auto">
+
+          <div class="div_eye_catch_1">
+  `         <a href="" class="eye_catch_link">Apply For Admission</a>
+          </div>
+          <div class="div_eye_catch_2">
+            <a href="" class="eye_catch_link">Register For Online Class</a>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <!-- ________________________________________________School_name_logo_Bar_moduole_______________________________________________________-->
+
+
+
+
+
+
+    {% block body %}
+    {% endblock %}
+
+    {% block js %}
+    {% endblock %}
+
+    <script src={% static "easy_app/js/base.js" %} charset="utf-8"></script>
+  </body>
+</html>

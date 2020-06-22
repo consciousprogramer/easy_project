@@ -1,0 +1,41 @@
+/*---------------------------------------------BOOTSTRAP CROUSEL STARTS------------------------------------------------*/
+
+
+/*---------------------------------------------BOOTSTRAP CROUSEL STARTS ENDS------------------------------------------------*/
+
+/*-----------------------------------Notice Bpard starts ------------------------------------------------------------------*/
+
+.notice_board_module{
+  padding: 1rem;
+  margin: 3rem 0;
+  border: 2px solid blue;
+  border-radius: 20px;
+}
+
+.actual_notices{
+  height: 20rem;
+  padding: 2rem 0.8rem;
+  box-shadow: ;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+
+/*-----------------------------------------Notice Board Ends----------------------------------------------------------------*/
+
+/*---------------------------------------------------Heads Message-------------------------------------------------------*/
+
+.heads_message_module{
+
+}
+.heads_photo{
+  margin: 0 1rem 1rem 0;
+  width: 220px;
+  float: left;
+}
+.principal_photo{
+  margin:0 0 1rem 1rem;
+  width: 200px;
+  float: right;
+}
+
+/*-------------------------------------------------heads Message Ends-----------------------------------------------------*/
