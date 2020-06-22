@@ -30,35 +30,58 @@ nav{
 
 /*-------------------------------------------------School_name_AND_LOGO_MODULE---------------------------------------------------------*/
 .school_name_and_Logo_module{
+  font-family: "Roboto";
   margin-top: 39px;
   padding: 1rem 2rem;
   height: auto;
   background: rgb(255,255,255);
 }
 
-.school_logo{
-
+.school_logo_div{
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 .school_logo_img{
   width: 150px;
 }
 
 .eye_catachers_containers{
-  display: flex;
-  flex-wrap:wrap;
-  flex-direction: row;
+  margin: 1rem 0;
 }
 
 .div_eye_catch_1,.div_eye_catch_2,.div_eye_catch_3{
-  padding: 0.5rem 1rem;
-  margin: 1rem 2rem;
-  border:2px solid black;
-  background: rgb(122,0,215);
-  background: linear-gradient(90deg, rgba(122,0,215,1) 28%, rgba(211,0,22,1) 100%);
+  margin-top: 5px;
+  margin-bottom: auto;
+  display: inline;
+  border: 1px solid red;
+  border-radius: 3px;
+  margin: 1rem 1rem;
+  background: rgb(215,0,198);
+  background: linear-gradient(90deg, rgba(215,0,198,1) 0%, rgba(194,0,56,1) 95%, rgba(211,0,22,1) 100%);
+
 }
 .eye_catch_link{
-  margin:1rem 0;
   color: black;
-  text-decoration: none;
+  padding: 1rem 2rem;
+  text-decoration-line: none;
+
+}
+
+@media (max-width:992px ) {
+
+  .school_name_and_Logo_module{
+    text-align: center;
+  }
+
+  .eye_catachers_containers{
+    margin: 1rem 0;
+  }
+
+  .div_eye_catch_1,.div_eye_catch_2,.div_eye_catch_3{
+    display: block;
+    margin: 1rem auto;
+  }
+
 }
 /*-------------------------------------------------Scj=hool_name_AND_LOGO_MODULE---------------------------------------------------------*/
