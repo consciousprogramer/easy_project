@@ -1,3 +1,7 @@
+body{
+
+}
+
 /*---------------------------------------------BOOTSTRAP CROUSEL STARTS------------------------------------------------*/
 
 
@@ -7,9 +11,8 @@
 
 .notice_board_module{
   padding: 1rem;
-  margin: 3rem 0;
+  margin: 3rem 0rem;
   border: 2px solid blue;
-  border-radius: 20px;
   text-align: center;
 }
 .notice_board_h1{
@@ -89,3 +92,47 @@
 
 
 /*-------------------------------------------------heads Message Ends-----------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------school activities Starts---------------------------------------*/
+
+.school_activities_photos_wrapper{
+  margin: 3rem auto;
+  /*padding: given inline */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content:space-around;
+  border-radius: 9px;
+  background: rgb(52,93,251);
+  background: linear-gradient(90deg, rgba(52,93,251,1) 0%, rgba(158,75,235,1) 100%);
+
+
+}
+.grid_images{
+  margin: 0.3rem;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgb(110,110,110);
+}
+
+@media (max-width: 992px) {
+  .school_activities_photos_wrapper{
+    margin: 3rem auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    background: rgb(52,93,251);
+    background: linear-gradient(90deg, rgba(52,93,251,1) 0%, rgba(158,75,235,1) 100%);
+
+
+  }
+  .grid_images{
+    margin:0.3rem;
+    width: 150px;
+    box-shadow: 5px 5px 10px rgb(110,110,110);
+  }
+
+}
+/*---------------------------------------------------------------school activities Ends-----------------------------------------*/
