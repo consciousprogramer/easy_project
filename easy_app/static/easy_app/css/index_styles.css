@@ -7,9 +7,29 @@ body{
 
 /*---------------------------------------------BOOTSTRAP CROUSEL STARTS ENDS------------------------------------------------*/
 
-/*-----------------------------------Notice Bpard starts ------------------------------------------------------------------*/
+/*--------------------------------------------moving text 1-------------------------------------------------------*/
 
+.moving_text_module_1{
+background-color: rgba(0,0,0,1);
+}
+.moving_text_div{
+  margin: 0 2rem;
+  padding: 5px 20px;
+
+}
+.moving_text_div>a{
+  color: white;
+  text-decoration-line: none;
+}
+
+/*--------------------------------------------moving text 1 ends-------------------------------------------------------*/
+
+/*-----------------------------------Notice Bpard starts ------------------------------------------------------------------*/
 .notice_board_module{
+  margin: 3rem 1rem;
+}
+
+/*.notice_board_module{
   padding: 1rem;
   margin: 3rem 0rem;
   border: 2px solid blue;
@@ -25,7 +45,7 @@ body{
   box-shadow: ;
   border-radius: 15px;
   overflow-y: scroll;
-}
+}*/
 
 /*-----------------------------------------Notice Board Ends----------------------------------------------------------------*/
 
