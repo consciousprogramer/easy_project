@@ -26,9 +26,51 @@ background-color: rgba(0,0,0,1);
 
 /*-----------------------------------Notice Bpard starts ------------------------------------------------------------------*/
 .notice_board_module{
-  margin: 3rem 1rem;
+  margin: 5rem 0;
+  font-family: "Roboto Condensed";
 }
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.actual_notices_grid{
+  padding:0;
+  border: 2px solid black;
+}
+.notice_board_h1{
+  padding: 1rem 2rem;
+  background: rgb(79,206,87);
+  background: linear-gradient(90deg, rgba(79,206,87,1) 0%, rgba(1,196,168,1) 100%);
 
+}
+.actual_notices{
+  height: 20rem;
+}
+.event_heading{
+  padding: 1rem 2rem;
+  background: rgb(79,206,87);
+  background: linear-gradient(90deg, rgba(79,206,87,1) 0%, rgba(1,196,168,1) 100%);
+
+}
+.event_grid{
+  width: 100%;
+  border: 2px solid black;
+  background: rgb(109,230,158);
+background: linear-gradient(90deg, rgba(109,230,158,0.7) 0%, rgba(130,242,225,0.7) 100%);
+}
+.event_marquee{
+  margin-left: 0rem;
+  height: 25rem;
+}
+@media (max-width: 992px) {
+  .actual_notices{
+    height: 20rem;
+    padding-bottom: 1rem;
+  }
+  .event_grid{
+    margin-top: 3rem;
+  }
+}
 /*.notice_board_module{
   padding: 1rem;
   margin: 3rem 0rem;
@@ -36,7 +78,6 @@ background-color: rgba(0,0,0,1);
   text-align: center;
 }
 .notice_board_h1{
-  font-family: "Roboto Condensed";
 }
 .actual_notices{
   font-family: "Roboto Condensed";
@@ -57,11 +98,12 @@ background-color: rgba(0,0,0,1);
 .message_heading{
   text-align: center;
   padding: 1.5rem 2rem;
-  background: rgb(0,152,215);
-  background: linear-gradient(90deg, rgba(0,152,215,0.2773727053687686) 10%, rgba(0,194,211,0.2773727053687686) 80%);
+  background: rgb(3,212,213);
+  background: linear-gradient(90deg, rgba(3,212,213,0.8) 0%, rgba(33,190,255,0.8) 100%);
 }
 .message_content{
-  background: rgba(150,150,150,0.2);
+  background: rgb(3,212,213);
+  background: linear-gradient(90deg, rgba(3,212,213,0.3594635266215861) 0%, rgba(33,190,255,0.2034411176580007) 100%);
   padding: 1rem;
 }
 .actual_heads_message{
