@@ -59,3 +59,20 @@ class class_teacher(models.Model):
 
     def __str__(self):
         return f"class teacher of{self.section.section_of_class.class_number}"
+                                    
+                                    
+class online_registration(models.Model):
+    reg_id = models.AutoField(primary_key = True)
+    students_fname = models.CharField(max_length = 50,verbose_name = "first name")
+    students_lname = models.CharField(max_length = 50,verbose_name = "last name")
+    DOB = models.DateField()
+    age = models.PositiveIntegerField(verbose_name = "age")
+    students_class = models.ForeignKey(students_class,on_delete = models.PROTECT ,verbose_name = "class")
+    fathers_name = models.CharField(max_length = 100,verbose_name = "father name")
+    mothers_name = models.CharField(max_length = 100,verbose_name = "mother name")
+    address = models.CharField(max_length = 300,verbose_name = "home address")
+    mobile_number = models.PositiveIntegerField(verbose_name = "gaurdians mobile number")
+    email = models.EmailField(blank = True,null = True, verbose_name = "e-mail id")
+
+    def __str__(self):
+        return f"Reg_id: {slef.reg_id} {self.name} age: {self.age}"
